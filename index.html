@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="K EXPLORE — Discover, experience, and register for premier technology summits, hackathons, music festivals, sports championships, and workshops.">
+    <meta name="keywords" content="K Explore, event management, tech summit, hackathon, college events, music fest, workshop, registration">
+    <meta name="author" content="K Explore Development Team">
+    <meta name="theme-color" content="#0b0b10">
+
+    <title>K EXPLORE — Discover. Experience. Connect.</title>
+
+    <!-- Google Fonts: Space Grotesk (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- =======================================================================
+         1. Header & Navigation Bar
+         ======================================================================= -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#home" class="brand-logo" aria-label="K Explore Homepage">
+                <div class="brand-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                        <polyline points="2 17 12 22 22 17"/>
+                        <polyline points="2 12 12 17 22 12"/>
+                    </svg>
+                </div>
+                <span>K <span class="gradient-text">EXPLORE</span></span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="nav-menu" aria-label="Primary Navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#featured" class="nav-link">Featured</a>
+                <a href="#explore" class="nav-link">Explore Events</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#registrations" class="nav-link">My Registrations</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Navigation Actions: Theme Toggle & Quick Action CTA -->
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Switch Theme" title="Toggle dark/light theme">
+                    <svg id="themeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                </button>
+
+                <a href="#explore" class="btn btn-primary btn-sm btn-explore-nav">
+                    Explore Events
+                </a>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle mobile navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div class="mobile-nav-drawer" id="mobileDrawer">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#featured" class="mobile-nav-link">Featured Events</a>
+            <a href="#explore" class="mobile-nav-link">Explore Events</a>
+            <a href="#how-it-works" class="mobile-nav-link">How It Works</a>
+            <a href="#registrations" class="mobile-nav-link">My Registrations</a>
+            <a href="#about" class="mobile-nav-link">About K Explore</a>
+            <a href="#contact" class="mobile-nav-link">Contact & Support</a>
+            <div style="margin-top: 1rem;">
+                <a href="#explore" class="btn btn-primary" style="width: 100%;">
+                    Browse All Events
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- =======================================================================
+         2. Hero Section
+         ======================================================================= -->
+    <section class="hero-section" id="home">
+        <div class="hero-glow-blob" aria-hidden="true"></div>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="section-pill">
+                    <span>✦</span> YOUR NEXT EXPERIENCE STARTS HERE
+                </div>
+                <h1 class="hero-headline">
+                    Find Your Next <br />
+                    <span class="gradient-text">Unforgettable</span> Experience.
+                </h1>
+                <p class="hero-description">
+                    Discover, explore, and register for premier university technology summits, 48-hour hackathons, indie music fests, and expert-led masterclasses — all curated in one modern hub.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#explore" class="btn btn-primary btn-lg">
+                        Explore Events
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#how-it-works" class="btn btn-secondary btn-lg">
+                        How It Works
+                    </a>
+                </div>
+
+                <!-- Hero Quick Search Bar -->
+                <div class="hero-quick-search">
+                    <div class="quick-search-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted); margin-right: 0.6rem;">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" id="heroSearchInput" class="quick-search-input" placeholder="Search by event title, tech, music, hackathon...">
+                        <button type="button" id="heroSearchBtn" class="btn btn-primary btn-sm">
+                            Find Events
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Visual Composition: Spotlight Card -->
+            <div class="hero-visual">
+                <div class="hero-card-stack">
+                    <div class="hero-spotlight-card">
+                        <div class="hero-card-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1000&q=80" 
+                                alt="TechNexus Global AI & Cloud Summit" 
+                                class="hero-card-img"
+                            />
+                            <div class="hero-media-overlay"></div>
+                            <div class="hero-floating-badge">
+                                <span class="pulse-dot"></span>
+                                <span>SPOTLIGHT EVENT</span>
+                            </div>
+                        </div>
+                        <div class="hero-card-body">
+                            <div class="hero-card-meta">
+                                <span>Technology • Grand Ballroom</span>
+                                <span class="badge badge-warning">Fast Filling</span>
+                            </div>
+                            <h3 class="hero-card-title">TechNexus Global AI & Cloud Summit 2026</h3>
+                            <div class="hero-card-venue">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <span>Convention Center, Grand Ballroom</span>
+                            </div>
+                            <div class="hero-card-footer">
+                                <div class="event-seats-indicator">
+                                    <span>38 seats left of 350</span>
+                                    <div class="seats-bar">
+                                        <div class="seats-fill" style="width: 89%;"></div>
+                                    </div>
+                                </div>
+                                <a href="#explore" class="btn btn-primary btn-sm">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating mini metric ticker -->
+                    <div class="hero-floating-stat">
+                        <div class="floating-stat-icon">⚡</div>
+                        <div>
+                            <div class="floating-stat-value">25,000+</div>
+                            <div class="floating-stat-label">Registered Participants</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================================================
+         3. Trust & Platform Statistics Section
+         ======================================================================= -->
+    <section class="stats-section" aria-label="Platform Statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number gradient-text">12+</div>
+                    <div class="stat-label">Curated Events</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number gradient-text">7</div>
+                    <div class="stat-label">Diverse Categories</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number gradient-text">25,000+</div>
+                    <div class="stat-label">Registered Attendees</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number gradient-text">99.4%</div>
+                    <div class="stat-label">Positive Feedback</div>
+                </div>
+            </div>
+            <p class="stats-disclaimer">
+                * Illustrative demo statistics highlighting platform capabilities for college evaluation.
+            </p>
+        </div>
+    </section>
+
+    <!-- =======================================================================
+         4. Featured Events Section
+         ======================================================================= -->
+    <section class="section" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">Handpicked Experiences</div>
+                <h2 class="section-title">Featured Flagship Events</h2>
+                <p class="section-desc">
+                    Explore high-impact university summits, 48-hour competitive hackathons, and star-studded cultural concerts.
+                </p>
+            </div>
+
+            <!-- Dynamically populated grid from data.js -->
+            <div class="events-grid" id="featuredEventsGrid">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================================================
+         5. How It Works Section
+         ======================================================================= -->
+    <section class="section" id="how-it-works" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">Simple 3-Step Process</div>
+                <h2 class="section-title">How K Explore Works</h2>
+                <p class="section-desc">
+                    Effortlessly transition from event discovery to confirmed registration in seconds.
+                </p>
+            </div>
+
+            <div class="how-it-works-grid">
+                <div class="step-card">
+                    <div class="step-number-badge">01</div>
+                    <h3 class="step-title">Discover Events</h3>
+                    <p class="step-desc">
+                        Search and filter through multi-disciplinary categories — technology, hackathons, concerts, business pitch fests, and creative arts.
+                    </p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number-badge">02</div>
+                    <h3 class="step-title">Explore Details</h3>
+                    <p class="step-desc">
+                        Inspect live countdown timers, detailed agendas, venue maps, organizer contacts, and real-time seat availability before deciding.
+                    </p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number-badge">03</div>
+                    <h3 class="step-title">Register & Attend</h3>
+                    <p class="step-desc">
+                        Submit validated registration in one click. Receive a unique ticket ID and QR pass stored securely in your browser's Local Storage.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================================================
+         6. Explore Events (Search, Filter, Sort Engine)
+         ======================================================================= -->
+    <section class="section" id="explore">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">Complete Schedule</div>
+                <h2 class="section-title">Explore All Events</h2>
+                <p class="section-desc">
+                    Find the perfect opportunity to learn, network, perform, or compete. Filter by category, keyword, or venue.
+                </p>
+            </div>
+
+            <!-- Control Bar: Search + Sort + Category Filters -->
+            <div class="explore-controls-wrapper">
+                <div class="explore-search-row">
+                    <!-- Real-time Search Box -->
+                    <div class="search-input-group">
+                        <span class="search-input-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </span>
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            class="search-input" 
+                            placeholder="Search by event title, category, venue, or keywords..."
+                            aria-label="Search events"
+                        />
+                        <button type="button" class="clear-search-btn" id="clearSearchBtn" aria-label="Clear search">✕</button>
+                    </div>
+
+                    <!-- Sort Dropdown -->
+                    <div class="sort-select-group">
+                        <select id="sortSelect" class="sort-select" aria-label="Sort events">
+                            <option value="upcoming">Sort: Upcoming First</option>
+                            <option value="furthest">Sort: Furthest Date</option>
+                            <option value="alphabetical">Sort: Alphabetical (A-Z)</option>
+                            <option value="capacity">Sort: Most Seats Available</option>
+                        </select>
+                        <span class="sort-select-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Category Pills (populated dynamically) -->
+                <div class="category-filter-list" id="categoryPillList" role="tablist" aria-label="Event Categories">
+                    <!-- Injected via JavaScript -->
+                </div>
+
+                <!-- Status & Reset Bar -->
+                <div class="explore-status-bar">
+                    <span id="resultsCountText">Showing all events</span>
+                    <button type="button" class="reset-filters-btn" id="resetFiltersBtn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                        Reset Filters
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dynamic Event Cards Grid -->
+            <div class="events-grid" id="exploreEventsGrid">
+                <!-- Dynamically populated via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================================================
+         7. My Registrations Section
+         ======================================================================= -->
+    <section class="section" id="registrations" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">Your Passes & Tickets</div>
+                <h2 class="section-title">My Registrations</h2>
+                <p class="section-desc">
+                    View your confirmed passes stored in your browser's Local Storage. Print tickets or cancel registrations anytime.
+                </p>
+            </div>
+
+            <!-- Registrations Grid -->
+            <div class="registrations-grid" id="registrationsGrid">
+                <!-- Injected via JavaScript from LocalStorage -->
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================================================
+         8. About K Explore Section
+         ======================================================================= -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text-content">
+                    <div class="section-pill">About The Platform</div>
+                    <h2 class="section-title">Designed for Seamless Campus & Regional Discovery</h2>
+                    <p class="about-paragraph">
+                        K Explore was conceptualized to solve the fragmented event notification chaos experienced across collegiate institutions and technical communities. Traditional bulletin boards and scattered social groups often cause students to miss registration deadlines and speaker sessions.
+                    </p>
+                    <p class="about-paragraph">
+                        Our platform centralizes academic symposia, national hackathons, cultural festivals, and esports tourneys into a unified, editorial-grade static interface powered by native browser technologies.
+                    </p>
+                    <div>
+                        <a href="#explore" class="btn btn-primary">
+                            Discover Events Today
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-features-grid">
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper">🎯</div>
+                        <h4 class="feature-title">Curated Quality</h4>
+                        <p class="feature-desc">Every listing features verified organizers, structured schedules, and clear venue directions.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper">⏱️</div>
+                        <h4 class="feature-title">Live Countdown</h4>
+                        <p class="feature-desc">Dynamic second-by-second countdown timers ensure you never miss opening keynotes.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper">🎫</div>
+                        <h4 class="feature-title">Local Pass Storage</h4>
+                        <p class="feature-desc">Registrations are saved instantly to Browser Local Storage with mock QR verification and cancellation control.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper">🌓</div>
+                        <h4 class="feature-title">Accessible UI</h4>
+                        <p class="feature-desc">Engineered with dark and light themes, high-contrast tokens, keyboard accessibility, and zero external bloat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================================================
+         9. Contact & Support Section
+         ======================================================================= -->
+    <section class="section" id="contact" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">Get In Touch</div>
+                <h2 class="section-title">Contact & Support</h2>
+                <p class="section-desc">
+                    Have questions about hosting an event, technical logistics, or need assistance? Reach out to our organizing committee.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info Card -->
+                <div class="contact-info-card">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <div class="contact-label">Campus Headquarters</div>
+                            <div class="contact-val">Innovation & Tech Hub, Campus 6, Tech Enclave</div>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <div class="contact-label">General Enquiries</div>
+                            <div class="contact-val">contact@kexplore.edu</div>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <div class="contact-label">Helpdesk Hotline</div>
+                            <div class="contact-val">+91 98765 43210 (Mon-Sat, 9 AM - 6 PM)</div>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">🎓</div>
+                        <div>
+                            <div class="contact-label">Academic Project</div>
+                            <div class="contact-val">Web Designing Final Mark Assignment</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-card">
+                    <!-- Demo Notice Banner -->
+                    <div id="contactSuccessBanner" style="display: none; padding: 1rem 1.25rem; background: var(--success-bg); border: 1px solid rgba(16, 185, 129, 0.4); border-radius: var(--radius-md); margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--success);">
+                        <strong>✓ Demo Message Received!</strong> This is a static frontend project; your inquiry has been simulated and validated cleanly without sending external emails.
+                    </div>
+
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Your Name <span class="required">*</span></label>
+                            <input type="text" id="contactName" class="form-control" placeholder="e.g. Aryan Sharma" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail" class="form-label">Email Address <span class="required">*</span></label>
+                            <input type="email" id="contactEmail" class="form-control" placeholder="name@domain.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject" class="form-label">Subject <span class="required">*</span></label>
+                            <input type="text" id="contactSubject" class="form-control" placeholder="e.g. Query regarding HackKrypton registration" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage" class="form-label">Message <span class="required">*</span></label>
+                            <textarea id="contactMessage" class="form-control" rows="4" placeholder="How can we assist you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Submit Message (Demo)
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================================================
+         10. Bottom Call-To-Action Banner
+         ======================================================================= -->
+    <section class="section" style="padding-top: 3rem; padding-bottom: 5.5rem;">
+        <div class="container">
+            <div class="cta-banner-wrapper">
+                <h2 class="cta-banner-title">
+                    Ready to Experience <span class="gradient-text">K EXPLORE</span>?
+                </h2>
+                <p class="cta-banner-desc">
+                    Join thousands of collegiate participants discovering exciting opportunities daily. Register now and take the stage.
+                </p>
+                <div class="cta-banner-actions">
+                    <a href="#explore" class="btn btn-primary btn-lg">Browse Upcoming Events</a>
+                    <a href="#registrations" class="btn btn-secondary btn-lg">View My Registrations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================================================
+         11. Footer
+         ======================================================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#home" class="brand-logo" style="margin-bottom: 0.5rem;">
+                        <div class="brand-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                                <polyline points="2 17 12 22 22 17"/>
+                                <polyline points="2 12 12 17 22 12"/>
+                            </svg>
+                        </div>
+                        <span>K <span class="gradient-text">EXPLORE</span></span>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Discover. Experience. Connect. A modern, frontend-driven event discovery and registration platform for collegiate innovators, performers, and organizers.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#featured" class="footer-link">Featured Events</a></li>
+                        <li><a href="#explore" class="footer-link">Explore Calendar</a></li>
+                        <li><a href="#how-it-works" class="footer-link">How It Works</a></li>
+                        <li><a href="#registrations" class="footer-link">My Registrations</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#explore" class="footer-link">Technology & AI</a></li>
+                        <li><a href="#explore" class="footer-link">National Hackathons</a></li>
+                        <li><a href="#explore" class="footer-link">Music & Festivals</a></li>
+                        <li><a href="#explore" class="footer-link">Sports & Esports</a></li>
+                        <li><a href="#explore" class="footer-link">Workshops & Design</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Connect With Us</h4>
+                    <p class="footer-brand-desc" style="margin-bottom: 1.25rem;">
+                        Follow our official channels for real-time announcements and speaker reveals.
+                    </p>
+                    <div class="social-links-row">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X / Twitter Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 K EXPLORE. Designed for College Web Designing Evaluation.
+                </div>
+                <div>
+                    Built with HTML5 • CSS3 • Vanilla ES6+ JavaScript • LocalStorage
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top floating button -->
+    <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top" title="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <!-- Global Toast Notification Container -->
+    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+    <!-- =======================================================================
+         12. Event Details Modal
+         ======================================================================= -->
+    <div class="modal-overlay" id="eventDetailsModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-container">
+            <button type="button" class="modal-close-btn" id="closeDetailsBtn" aria-label="Close modal">✕</button>
+            
+            <div class="modal-hero-cover">
+                <img id="modalHeroImg" src="" alt="Event Cover" class="modal-hero-img">
+                <div class="modal-hero-gradient"></div>
+                <div class="modal-hero-content">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span id="modalCategoryBadge" class="badge badge-primary">Category</span>
+                        <span id="modalStatusBadge" class="badge badge-success">Open</span>
+                    </div>
+                    <h2 id="modalTitle" class="section-title" style="margin-bottom: 0.25rem; font-size: 1.8rem; color: #ffffff;">Event Title</h2>
+                    <p id="modalOrganizer" style="color: var(--accent-primary); font-size: 0.9rem; font-weight: 500;">Organizer</p>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <!-- Live Dynamic Countdown Timer -->
+                <div class="countdown-container">
+                    <div class="countdown-label">
+                        <span>⏱️ Live Event Countdown</span>
+                        <span class="countdown-status-text" id="timerStatusText">Counting down</span>
+                    </div>
+                    <div class="countdown-timer-grid">
+                        <div class="countdown-unit">
+                            <span class="countdown-val" id="timerDays">00</span>
+                            <span class="countdown-unit-label">Days</span>
+                        </div>
+                        <div class="countdown-unit">
+                            <span class="countdown-val" id="timerHours">00</span>
+                            <span class="countdown-unit-label">Hours</span>
+                        </div>
+                        <div class="countdown-unit">
+                            <span class="countdown-val" id="timerMinutes">00</span>
+                            <span class="countdown-unit-label">Minutes</span>
+                        </div>
+                        <div class="countdown-unit">
+                            <span class="countdown-val" id="timerSeconds">00</span>
+                            <span class="countdown-unit-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Details Metadata Grid -->
+                <div class="event-meta-grid">
+                    <div class="meta-block">
+                        <div class="meta-icon">📅</div>
+                        <div>
+                            <div class="meta-title">Date & Time</div>
+                            <div class="meta-value" id="modalDate">Date</div>
+                            <div style="font-size: 0.82rem; color: var(--text-muted);" id="modalTime">Time</div>
+                        </div>
+                    </div>
+                    <div class="meta-block">
+                        <div class="meta-icon">📍</div>
+                        <div>
+                            <div class="meta-title">Venue & Location</div>
+                            <div class="meta-value" id="modalVenue">Venue</div>
+                        </div>
+                    </div>
+                    <div class="meta-block">
+                        <div class="meta-icon">🎟️</div>
+                        <div>
+                            <div class="meta-title">Available Seats</div>
+                            <div class="meta-value" id="modalSeats">0 Seats</div>
+                        </div>
+                    </div>
+                    <div class="meta-block">
+                        <div class="meta-icon">⏳</div>
+                        <div>
+                            <div class="meta-title">Registration Deadline</div>
+                            <div class="meta-value" id="modalDeadline">Deadline</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Description & Highlights -->
+                <div class="modal-description-section">
+                    <h4 class="modal-section-heading">About This Experience</h4>
+                    <p class="modal-desc-text" id="modalDescription">Detailed description...</p>
+                    <div class="modal-tags-list" id="modalTagsList"></div>
+                </div>
+
+                <!-- Modal Actions -->
+                <div class="modal-actions-footer">
+                    <button type="button" class="btn btn-primary" id="modalRegisterBtn">
+                        Register for this Event
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =======================================================================
+         13. Event Registration Modal Form
+         ======================================================================= -->
+    <div class="modal-overlay" id="registrationModal" role="dialog" aria-modal="true" aria-labelledby="regModalHeading">
+        <div class="modal-container" style="max-width: 580px;">
+            <button type="button" class="modal-close-btn" id="closeRegModalBtn" aria-label="Close registration modal">✕</button>
+
+            <div class="modal-body" style="padding: 2.2rem;">
+                <div style="margin-bottom: 1.5rem;">
+                    <div class="section-pill">Instant Reservation</div>
+                    <h3 id="regModalHeading" class="section-title" style="font-size: 1.6rem; margin-bottom: 0.35rem;">
+                        Event Registration
+                    </h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                        Complete your details below. Your confirmed pass will be generated and stored securely in your browser.
+                    </p>
+                </div>
+
+                <form id="registrationForm" novalidate>
+                    <div class="form-group">
+                        <label for="regEventSelect" class="form-label">Select Event <span class="required">*</span></label>
+                        <select id="regEventSelect" class="form-control" required>
+                            <!-- Dynamically populated -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regFullName" class="form-label">Full Name <span class="required">*</span></label>
+                        <input type="text" id="regFullName" class="form-control" placeholder="e.g. Rahul Verma" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regEmail" class="form-label">Email Address <span class="required">*</span></label>
+                        <input type="email" id="regEmail" class="form-control" placeholder="rahul@domain.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regPhone" class="form-label">Mobile Number (10-Digit Indian) <span class="required">*</span></label>
+                        <input type="tel" id="regPhone" class="form-control" placeholder="9876543210" maxlength="10" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regOrganization" class="form-label">College / Organization (Optional)</label>
+                        <input type="text" id="regOrganization" class="form-control" placeholder="e.g. School of Computer Engineering">
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" id="regTerms" required checked>
+                        <label for="regTerms">
+                            I agree to abide by the event code of conduct and participate responsibly.
+                        </label>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; justify-content: flex-end; margin-top: 1.5rem;">
+                        <button type="submit" id="regSubmitBtn" class="btn btn-primary" style="width: 100%;">
+                            Confirm Registration
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- =======================================================================
+         14. Registration Success & Ticket Modal
+         ======================================================================= -->
+    <div class="modal-overlay" id="regSuccessModal" role="dialog" aria-modal="true" aria-labelledby="successModalTitle">
+        <div class="modal-container" style="max-width: 620px;">
+            <button type="button" class="modal-close-btn" id="closeSuccessModalBtn" aria-label="Close modal">✕</button>
+
+            <div class="modal-body" style="padding: 2.2rem; text-align: center;">
+                <div style="width: 60px; height: 60px; margin: 0 auto 1.25rem; background: var(--success-bg); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--success);">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+
+                <h3 id="successModalTitle" class="section-title" style="font-size: 1.6rem; margin-bottom: 0.4rem;">
+                    Registration Confirmed!
+                </h3>
+                <p style="font-size: 0.95rem; color: var(--text-secondary); max-width: 460px; margin: 0 auto 1.5rem;">
+                    Your ticket has been generated and saved to Local Storage. Present this pass at the venue entrance.
+                </p>
+
+                <!-- Pass / Ticket Mockup -->
+                <div class="ticket-card">
+                    <div class="ticket-header">
+                        <div>
+                            <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">DIGITAL ACCESS PASS</span>
+                            <div class="ticket-id-tag" id="successTicketId">KX-2026-XXXX</div>
+                        </div>
+                        <span class="badge badge-success">✓ Confirmed</span>
+                    </div>
+
+                    <div class="ticket-grid">
+                        <div class="ticket-info-list" style="text-align: left;">
+                            <div class="ticket-info-row">
+                                <span class="ticket-field-label">Participant</span>
+                                <span class="ticket-field-val" id="successParticipant">Rahul Verma</span>
+                            </div>
+                            <div class="ticket-info-row">
+                                <span class="ticket-field-label">Event</span>
+                                <span class="ticket-field-val" id="successEventTitle">Tech Summit</span>
+                            </div>
+                            <div class="ticket-info-row">
+                                <span class="ticket-field-label">Date & Time</span>
+                                <span class="ticket-field-val" id="successEventDate">Date</span>
+                            </div>
+                            <div class="ticket-info-row">
+                                <span class="ticket-field-label">Venue</span>
+                                <span class="ticket-field-val" id="successVenue">Venue</span>
+                            </div>
+                        </div>
+
+                        <div class="ticket-qr-box">
+                            <!-- Procedural SVG QR Code Mockup -->
+                            <svg class="ticket-qr-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100" height="100" fill="white"/>
+                                <rect x="10" y="10" width="24" height="24" fill="#0f172a"/>
+                                <rect x="14" y="14" width="16" height="16" fill="white"/>
+                                <rect x="18" y="18" width="8" height="8" fill="#0f172a"/>
+                                <rect x="66" y="10" width="24" height="24" fill="#0f172a"/>
+                                <rect x="70" y="14" width="16" height="16" fill="white"/>
+                                <rect x="74" y="18" width="8" height="8" fill="#0f172a"/>
+                                <rect x="10" y="66" width="24" height="24" fill="#0f172a"/>
+                                <rect x="14" y="70" width="16" height="16" fill="white"/>
+                                <rect x="18" y="74" width="8" height="8" fill="#0f172a"/>
+                                <rect x="42" y="14" width="6" height="18" fill="#0f172a"/>
+                                <rect x="52" y="10" width="8" height="6" fill="#0f172a"/>
+                                <rect x="42" y="42" width="16" height="16" fill="#0f172a"/>
+                                <rect x="66" y="42" width="10" height="8" fill="#0f172a"/>
+                                <rect x="80" y="52" width="10" height="6" fill="#0f172a"/>
+                                <rect x="42" y="66" width="8" height="16" fill="#0f172a"/>
+                                <rect x="54" y="76" width="16" height="6" fill="#0f172a"/>
+                                <rect x="74" y="70" width="16" height="16" fill="#0f172a"/>
+                            </svg>
+                            <span class="ticket-qr-caption">Scan at Entrance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem;">
+                    <button type="button" class="btn btn-primary" id="viewMyRegsFromSuccessBtn">
+                        View in My Registrations
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =======================================================================
+         15. JavaScript Modules
+         ======================================================================= -->
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
